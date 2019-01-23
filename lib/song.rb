@@ -34,7 +34,9 @@ class Song
       # binding.pry
       @@all.find do |song|
         if song.name == name
-        return song
+          song
+        else
+          @@all = []
         end
       end
     end
